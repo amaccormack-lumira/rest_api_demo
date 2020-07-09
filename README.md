@@ -36,7 +36,7 @@ The software engineers have now finished their initial development and the appli
 
 So that the team can review any bugs found in their application, a simple bug report should be produced as a result of the testing process. This can be in any format you feel is appropriate.
 
-####Automation
+#### Automation
 
 If you are applying as an automation tester, please give an example of automating the running of some tests. You can use python or any other language or tool you are familiar with. If we need to install something to run your tests, please provide instructions as part of your submission.
 
