@@ -51,13 +51,13 @@ Linux installs may well already have a python 3 install. Some issues have been s
 
 A download for the project can be found at:
 
-https://github.com/amaccormack-lumira/rest_api_demo/archive/techtest1.1.zip
+https://github.com/amaccormack-lumira/rest_api_demo/archive/techtest1.2.zip
 
 Once downloaded, extract the zip file, and use a Command Prompt to open the extracted directory. Navigate into the appropriate folder. The API can then be run using the following commands:
 
 ```
 cd path_to_workspace
-cd rest_api_demo-techtest1.1
+cd rest_api_demo-techtest1.2
 pip install virtualenv
 ```
 (if you get errors, try using pip3 instead)
