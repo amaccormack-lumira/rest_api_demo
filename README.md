@@ -57,7 +57,7 @@ Once downloaded, extract the zip file, and use a Command Prompt to open the extr
 
 ```
 cd path_to_workspace
-cd rest_api_demo-techtest1.2
+cd rest_api_demo-techtest1.3
 pip install virtualenv
 ```
 (if you get errors, try using pip3 instead)
