@@ -51,7 +51,7 @@ Linux installs may well already have a python 3 install. Some issues have been s
 
 A download for the project can be found at:
 
-https://github.com/amaccormack-lumira/rest_api_demo/archive/refs/tags/techtest1.3.zip
+https://github.com/amaccormack-lumira/rest_api_demo/archive/refs/tags/techtest1.4.zip
 
 Once downloaded, extract the zip file, and use a Command Prompt to open the extracted directory. Navigate into the appropriate folder. The API can then be run using the following commands:
 
