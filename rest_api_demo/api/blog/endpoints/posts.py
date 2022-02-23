@@ -1,7 +1,14 @@
 import logging
 
 from flask import request
-from flask_restplus import Resource
+from flask_restx import Resource
+try:
+    from flask_restx import Resource
+except ImportError:
+    import werkzeug, flask.scaffold
+    werkzeug.cached_property = werkzeug.utils.cached_property
+    flask.helpers._endpoint_from_view_func = flask.scaffold._endpoint_from_view_func
+    from flask_restx import Resource
 from rest_api_demo.api.blog.business import create_blog_post, update_post, delete_post
 from rest_api_demo.api.blog.serializers import blog_post, page_of_blog_posts
 from rest_api_demo.api.blog.parsers import pagination_arguments

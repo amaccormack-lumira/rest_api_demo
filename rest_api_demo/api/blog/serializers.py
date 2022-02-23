@@ -1,4 +1,10 @@
-from flask_restplus import fields
+try:
+    from flask_restx import fields
+except ImportError:
+    import werkzeug, flask.scaffold
+    werkzeug.cached_property = werkzeug.utils.cached_property
+    flask.helpers._endpoint_from_view_func = flask.scaffold._endpoint_from_view_func
+    from flask_restx import fields
 from rest_api_demo.api.restplus import api
 
 blog_post = api.model('Blog post', {
