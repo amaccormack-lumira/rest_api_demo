@@ -57,7 +57,7 @@ Once downloaded, extract the zip file, and use a Command Prompt to open the extr
 
 ```
 cd path_to_workspace
-cd rest_api_demo-techtest1.3
+cd rest_api_demo-techtest1.4
 pip install virtualenv
 ```
 (if you get errors, try using pip3 instead)
@@ -65,7 +65,7 @@ pip install virtualenv
 * On Windows (if you have both python 2 and python 3 installed, you may need to tell virtualenv the path to python3 install with -p option):
 ```
 virtualenv venv
-venv\Scripts\activate
+venv\Scripts\activate.bat
 ```
 
 * On Linux/MacOS: 
@@ -75,7 +75,7 @@ source venv/bin/activate
 ```
 Then, on all systems:
 ```
-(venv) pip install -r requirements.txt
+(venv) python setup.py install
 (venv) python rest_api_demo/app.py
 ```
 (if you get errors, try using pip3 and python3 instead)
