@@ -1,7 +1,15 @@
 import logging
 import traceback
 
-from flask_restplus import Api
+
+try:
+    from flask_restx import Api
+except ImportError:
+    import werkzeug, flask.scaffold
+    werkzeug.cached_property = werkzeug.utils.cached_property
+    flask.helpers._endpoint_from_view_func = flask.scaffold._endpoint_from_view_func
+    from flask_restx import Api
+#from flask_restplus import Api
 from rest_api_demo import settings
 from sqlalchemy.orm.exc import NoResultFound
 

@@ -1,4 +1,11 @@
-from flask_restplus import reqparse
+try:
+    from flask_restx import reqparse
+except ImportError:
+    import werkzeug, flask.scaffold
+
+    werkzeug.cached_property = werkzeug.utils.cached_property
+    flask.helpers._endpoint_from_view_func = flask.scaffold._endpoint_from_view_func
+    from flask_restx import reqparse
 
 pagination_arguments = reqparse.RequestParser()
 pagination_arguments.add_argument('page', type=int, required=False, default=1, help='Page number')

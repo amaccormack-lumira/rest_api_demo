@@ -41,9 +41,9 @@ So that the team can review any bugs found in their application, a simple bug re
 If you are applying as an automation tester, please give an example of automating the running of some tests. You can use python or any other language or tool you are familiar with. If we need to install something to run your tests, please provide instructions as part of your submission.
 
 ### Install/setup of the app to test
-In order to run the application, you need a copy of Python 3. Unfortuantely, it seems the latest version 3.10 has broken this app, so please use a slightly older version. This can be downloaded from:
+In order to run the application, you need a copy of Python 3. This can be downloaded from:
 
-https://www.python.org/downloads/release/python-399/
+https://www.python.org/downloads
 
 Linux installs may well already have a python 3 install. Some issues have been seen with this test on Ubuntu, where sqllite has not been set up OK, please contact us if you have these issues, or try another platform.
 
@@ -51,13 +51,13 @@ Linux installs may well already have a python 3 install. Some issues have been s
 
 A download for the project can be found at:
 
-https://github.com/amaccormack-lumira/rest_api_demo/archive/refs/tags/techtest1.3.zip
+https://github.com/amaccormack-lumira/rest_api_demo/archive/refs/tags/techtest1.4.zip
 
 Once downloaded, extract the zip file, and use a Command Prompt to open the extracted directory. Navigate into the appropriate folder. The API can then be run using the following commands:
 
 ```
 cd path_to_workspace
-cd rest_api_demo-techtest1.3
+cd rest_api_demo-techtest1.4
 pip install virtualenv
 ```
 (if you get errors, try using pip3 instead)
@@ -65,7 +65,7 @@ pip install virtualenv
 * On Windows (if you have both python 2 and python 3 installed, you may need to tell virtualenv the path to python3 install with -p option):
 ```
 virtualenv venv
-venv\Scripts\activate
+venv\Scripts\activate.bat
 ```
 
 * On Linux/MacOS: 
@@ -75,8 +75,7 @@ source venv/bin/activate
 ```
 Then, on all systems:
 ```
-(venv) pip install -r requirements.txt
-(venv) python setup.py develop
+(venv) python setup.py install
 (venv) python rest_api_demo/app.py
 ```
 (if you get errors, try using pip3 and python3 instead)
